@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>title</title>
+    <style>
+        .form{
+            text-align: center;
+        }
+    </style>
+    <script>
+        function nam(){
+            const wel=document.getElementById("name").value
+            document.getElementById("para").innerHTML="helloo"+" "+wel
+        }
+        function age(){
+            const age=parseInt(document.getElementById("age").value)
+            if(age>=18){
+                document.getElementById("para2").innerHTML="you are eligible"
+            }
+            else{
+                document.getElementById("para2").innerHTML="you are not eligible"
+            }
+            }
+    </script>
+  </head>
+  <body class="form">
+    <h1>welcome</h1>
+    <label>Name</label>
+    <input type="text" class="name" id="name">
+    <button class="name" onclick="nam()">click</button><br><br>
+    <p id="para"></p>
+    <div>
+        <label>Enter ur age</label>
+        <input type="number" id="age"><br><br>
+        <button onclick="age()">vote</button>
+        <p id="para2"></p>
+    </div>
+  </body>
+</html>
